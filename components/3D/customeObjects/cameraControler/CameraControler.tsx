@@ -22,6 +22,7 @@ const CameraControler = () => {
   /**Condition of visibility**/
   const path = usePathname();
   const visibleOnHome = path === pagesPath.homePath;
+  const scrolledOnZ = path === pagesPath.homePath;
 
   /**Animations / Manipulations*/
   useFrame(state => {
@@ -34,9 +35,6 @@ const CameraControler = () => {
         0,
         THREE.MathUtils.lerp(
           meshRef.current.position.z,
-          // scrollProgress.current * -30,
-          // true ? window.scrollY / -200 : 0,
-          // window.scrollY / -200,
           window.scrollY / (state.size.height * -0.22),
           0.1
         )
