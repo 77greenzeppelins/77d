@@ -4,6 +4,7 @@ import React from 'react';
 /**Components**/
 import Header from '@/components/layoutComponents/header/Header';
 import AppContainer from '@/components/layoutComponents/appContent/AppContainer';
+import PseudoFooter from '@/components/layoutComponents/pseudoFooter/PseudoFooter';
 /**CSS Staff**/
 import '@/styles/globals.css';
 /**Font Staff*/
@@ -32,10 +33,7 @@ export default function RootLayout({
       <body className="relative font-sans">
         <Header />
         <AppContainer>{children}</AppContainer>
-        {/* <MainCanvas /> */}
-        {/* <AppContent>{children}</AppContent> */}
-        {/* <AppContentScrollControls>{children}</AppContentScrollControls> */}
-        {/* <TestComponent /> */}
+        <PseudoFooter />
       </body>
     </html>
   );
