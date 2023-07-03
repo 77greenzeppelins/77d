@@ -2,6 +2,8 @@
 /*
 __________2D
 */
+//___
+import ScrollPrompt from './layoutComponents/pseudoFooter/scrollPrompt/ScrollPrompt';
 //__direct contact Staff
 import InstantContactButtons2D from './multipagesComponents/instantContactButtons/InstantContactButtons2D';
 import DirectEmail from './multipagesComponents/_basicComponents/links/directContactLinks/DirectEmail';
@@ -43,10 +45,14 @@ import Act6 from './3D/page_1_home/acts/act_6/Act6';
 import Act7 from './3D/page_1_home/acts/act_7/Act7';
 import Act8 from './3D/page_1_home/acts/act_8/Act8';
 import SmoothCvContainer from './pagesComponents/pageCV/smoothCvContainer/SmoothCvContainer';
+import FlyingLine from './multipagesComponents/lines/flyingLine/FlyingLine';
 
 //__
 
 export {
+  //___
+  ScrollPrompt,
+  FlyingLine,
   //___
   InstantContactButtons2D,
   DirectEmail,
